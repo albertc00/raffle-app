@@ -1,11 +1,11 @@
 <script>
-  import { fade, slide } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
 
   export let name;
   export let branch;
 </script>
 
-<li transition:fade={{ delay: 250, duration: 500 }} class="entry">
+<li transition:fade={{ delay: 250, duration: 400 }} class="entry">
   <span class="branch">{branch}</span>
   <span class="name">{name}</span>
 </li>
@@ -14,7 +14,6 @@
   @use '../styles/app';
 
   .entry {
-    // all: unset;
     display: grid;
     grid-template-columns: 72px 1fr;
     gap: 0.75rem;
@@ -26,8 +25,6 @@
     padding: 0.75rem 0 0 3rem;
 
     .branch {
-      // display: flex;
-      // align-items: center;
       text-align: center;
       color: #28272e;
       background-color: #fff;

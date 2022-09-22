@@ -214,19 +214,6 @@
         #fd1d1d
       );
 
-      img {
-        z-index: -1;
-        position: absolute;
-        min-width: 100%;
-        height: 200%;
-      }
-
-      .callbox {
-        font-weight: bold;
-        color: #fff;
-        padding-top: 2.5rem;
-      }
-
       .tagline {
         color: #fff;
         // color: #28272e;
@@ -305,10 +292,6 @@
     &.bottom {
       height: 55vh;
       background-color: #232228;
-
-      .participants {
-        padding-top: 5rem;
-      }
     }
 
     h1,

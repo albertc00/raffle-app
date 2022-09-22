@@ -1,8 +1,6 @@
 <script>
-  import { entries } from '../store/store';
   import Entry from './Entry.svelte';
   import { parseISO, getWeek } from 'date-fns';
-  import { onMount } from 'svelte';
 
   export let data = [];
 
@@ -53,7 +51,6 @@
   @use '../styles/app';
 
   .entries {
-    // padding: 1.5rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
