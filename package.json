@@ -1,0 +1,27 @@
+{
+  "name": "geo-popup-svelte",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-image": "^2.0.6",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "prettier": "^2.7.1",
+    "rollup": "^2.79.0",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "sass": "^1.54.9",
+    "svelte": "^3.50.1",
+    "svelte-preprocess": "^4.10.7"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "sirv-cli": "^2.0.2"
+  }
+}

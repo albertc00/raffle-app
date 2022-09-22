@@ -1,0 +1,57 @@
+$theme: 'default';
+
+$blue-300: #196fd9;
+$blue-350: #196ed9;
+$blue-400: #014e89;
+$blue-700: #063060;
+
+$grey-75: #f9f9f9;
+$grey-100: #f2f2f2;
+$grey-150: #e7e7e7;
+$grey-200: #c4cbcf;
+$grey-250: #b1b1b1;
+$grey-400: #5f7380;
+$grey-600: #313b42;
+$grey-650: #35383c;
+$grey-700: #282b2e;
+$grey-900: #231f20;
+
+$yellow-400: #ffca09;
+$red-400: #fa450e;
+$green-400: #14b37d;
+
+@function colors($name, $alpha: 1) {
+  $colors: (
+    'blue-300': #196fd9,
+    'blue-350': #196ed9,
+    'blue-400': #014e89,
+    'blue-700': #063060,
+    'teal-350': #218fa6,
+    'teal-400': #007cba,
+    'grey-75': #f9f9f9,
+    'grey-100': #f2f2f2,
+    'grey-150': #e7e7e7,
+    'grey-200': #c4cbcf,
+    'grey-250': #b1b1b1,
+    'grey-300': #728896,
+    'grey-400': #5f7380,
+    'grey-600': #313b42,
+    'grey-650': #35383c,
+    'grey-700': #282b2e,
+    'grey-900': #231f20,
+    'yellow-400': #ffca09,
+    'red-300': #f76823,
+    'red-400': #fa450e,
+    'green-350': #16b37d,
+    'green-400': #14b37d,
+    'orange-400': #ffa10b,
+    'purple-400': #8754a1,
+  );
+
+  $color: map-get($colors, $name);
+  @if not $color {
+    $color: #000;
+  }
+
+  @return rgba($color, $alpha);
+}

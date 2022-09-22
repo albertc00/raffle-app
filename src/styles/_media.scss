@@ -1,0 +1,17 @@
+@use './breakpoints' as *;
+
+@mixin media($bp, $args: false) {
+  @if not map-has-key($breakpoints, $bp) {
+    @error 'Invalid argument "#{$bp}".';
+  }
+
+  $width: map-get($breakpoints, $bp) * 1px;
+
+  @media (min-width: $width) {
+    @if $args {
+      @content ($width);
+    } @else {
+      @content;
+    }
+  }
+}
