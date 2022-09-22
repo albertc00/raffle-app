@@ -244,7 +244,7 @@
           padding: 0 5px;
           margin: 0;
           font-family: 'Poppins', sans-serif;
-          @include app.text('base');
+          @include app.text('lg');
           text-align: center;
           border-bottom: 1px solid #fff;
 
@@ -260,7 +260,7 @@
 
         display: flex;
         justify-content: center;
-        padding: 1.5rem 0;
+        padding: 1.275rem 0;
 
         button {
           font-family: 'Poppins', sans-serif;

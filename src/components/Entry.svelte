@@ -1,9 +1,11 @@
 <script>
+  import { fade, slide } from 'svelte/transition';
+
   export let name;
   export let branch;
 </script>
 
-<li class="entry">
+<li transition:fade={{ delay: 250, duration: 500 }} class="entry">
   <span class="branch">{branch}</span>
   <span class="name">{name}</span>
 </li>
